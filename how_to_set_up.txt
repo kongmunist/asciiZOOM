@@ -1,0 +1,8 @@
+Someone needs to be port forwarded. Alternatively, ssh into a unix server hosted by CMU. This is because y'all probably aren't on the same network and can't access each other's computers directly, instead having to go through the router.
+1. Make one of you ssh into the server and copy the asciiZOOMserver.py file into a directory. Fix the UDP_IP variable inside the file to reflect the specific unix machine you ended up in.
+2. Both of you locally need to have a copy of asciifyimage.py and asciiZOOM.py, and change the variable UDP_IP inside to be the specific unix machine the server is running on.
+3. Also, the local python must have opencv2 installed (the command is "pip install opencv-python"). The application you're running the python from (terminal or powershell or an IDE) needs to have webcam access granted as well, which they'll usually prompt you about
+4. Run the asciiZOOM.server.py on the server
+5. Each of you run the asciiZOOM.py file locally. 
+6. Congrats! Now you can see each other through a secure, DIY terminal connection instead of relying on Zoom's insecure, fake-encrypted crappy video chat. 
+7. Oh you want audio now? And chat feature? Kids today are so greedy... Use discord or something, if y'all made it this far I'm sure you can figure it out. 
